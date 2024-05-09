@@ -19,7 +19,9 @@ function rotateHand(hour){
     return hour / 12 * 360;
 }
 
-updateClock("york", 0);
-updateClock("sydney", 11);
+setInterval(function () {
+    updateClock("york", 0);
+    updateClock("sydney", 11);
+}, 1000);
 
 
